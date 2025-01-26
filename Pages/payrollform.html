@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll</title>
+    <link rel="stylesheet" href="../Styles/payrollform.css">
+</head>
+
+<body>
+    <div class="emp-pyroll-form">
+        <header>
+            <div class="emp-nvbar">
+                <div class="emp-nvbar-logo">
+                    <img src="../Assets/logo.jpg" alt="Employee Payroll" class="logo">
+                </div>
+                <div class="emp-nvbar-hd">
+                    <h3 id="hd-emp">
+                        EMPLOYEE
+                    </h3>
+                    <h3 class="hd-pyrl">
+                        PAYROLL
+                    </h3>
+                </div>
+            </div>
+        </header>
+        <main class="emp-bdy">
+            <div class="emp-bdy-box">
+                <h2 class="emp-bdy-hd">
+                    Employee Payroll Form
+                </h2>
+                <form class="emp-bdy-box-frm">
+                    <div class="name">
+                        <label for="Name" class="ques">Name </label>
+                        <div class="profile-name">
+                            <input type="text" id="namebox">
+                        </div>
+                        <br><br>
+                    </div>
+
+                    <div class="emp-bdy-box-frm-pi">
+                        <label for="profileImage" class="ques">Profile Image</label>
+                        <div class="profile-radio">
+                            <label class="pi-div">
+                                <input type="radio" name="profile-image" value="../Assets/gori1.jpg">
+                                <img src="../Assets/gori1.jpg" alt="Profile 1" class="pimg">
+                            </label>
+
+                            <label class="pi-div">
+                                <input type="radio" name="profile-image" value="../Assets/kalu.jpg">
+                                <img src="../Assets/kalu.jpg" alt="Profile 2" class="pimg">
+                            </label>
+
+                            <label class="pi-div">
+                                <input type="radio" name="profile-image" value="../Assets/gori2.jpg">
+                                <img src="../Assets/gori2.jpg" alt="Profile 3" class="pimg">
+                            </label>
+
+                            <label class="pi-div">
+                                <input type="radio" name="profile-image" value="../Assets/gora.jpg">
+                                <img src="../Assets/gora.jpg" alt="Profile 4" class="pimg">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="emp-bdy-box-frm-g">
+                        <label for="Gender" class="ques">Gender</label>
+                        <div class="profile-gender">
+                            <label class="g-box">
+                                <input type="radio" name="genbox" value="Male" class="g-inp">
+                                <h5 class="g-inp-txt">Male</h5>
+                            </label class="g-box">
+                            <label class="g-box">
+                            <input type="radio" name="genbox" value="Female" class="g-inp">
+                            <h5 class="g-inp-txt">Female</h5>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="emp-bdy-box-frm-dpt">
+                        <label for="Department" class="ques">Department</label>
+                        <div class="dpt-checkbox">
+                            <label class="emp-bdy-box-frm-dpt-chk">
+                                <input type="checkbox" name="dpt" value="HR">HR
+                            </label>
+                            <label class="emp-bdy-box-frm-dpt-chk">
+                                <input type="checkbox" name="dpt" value="sales">Sales
+                            </label>
+                            <label class="emp-bdy-box-frm-dpt-chk">
+                                <input type="checkbox" name="dpt" value="Finance">Finance
+                            </label>
+                            <label class="emp-bdy-box-frm-dpt-chk">
+                                <input type="checkbox" name="dpt" value="Engineer">Engineer
+                            </label>
+                            <label class="emp-bdy-box-frm-dpt-chk">
+                                <input type="checkbox" name="dpt" value="Others">Others
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="emp-bdy-box-frm-sal">
+                        <label for="Salary" class="ques">Salary</label>
+                        <div class="profile-sal">
+                            <select name="Salary" id="salary">
+                                <option value="50000"> Select Salary </option>
+                                <option value="50000"> 50000 </option>
+                                <option value="70000"> 50000-70000 </option>
+                                <option value="100000"> 70000-100000 </option>
+                                <option value="100001"> >100000 </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="emp-bdy-box-frm-sd">
+                        <label for="start Date" class="ques">Start Date</label>
+                        <div class="profile-sd">
+                            <label class="emp-bdy-box-frm-sd-drp"> 
+                                <select name="Date" id="date">
+                                    <option value="1">Date</option>
+                                    <option value="1">1-10</option>
+                                    <option value="2">11-20</option>
+                                    <option value="3">21-31</option>
+                                </select>
+                            </label>
+
+                            <label class="emp-bdy-box-frm-sd-drp"> 
+                                <select name="month" id="month">
+                                    <option value="1">Month</option>
+                                    <option value="1">Jan-April</option>
+                                    <option value="2">May-August</option>
+                                    <option value="3">September-December</option>
+                                </select>
+                            </label>
+
+                            <label class="emp-bdy-box-frm-sd-drp">
+                                <select name="year" id="year">
+                                    <option value="1">Year</option>
+                                    <option value="1">1965-1985</option>
+                                    <option value="2">1986-2005</option>
+                                    <option value="3">2006-2025</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="emp-bdy-box-frm-nts">
+                        <label for="notes" class="ques">Notes</label>
+                        <div class="profile-notes">
+                            <input type="text" name="notes" id="notes">
+                        </div>
+                    </div>
+                    <div class="emp-bdy-box-btn">
+                        <div class="cancel-btn">
+                            <button id="cancel">Cancel</button>
+                        </div>
+                        <div class="subres-btn">
+                            <button id="submit" type="submit">Submit</button>
+                            <button id="reset" type="reset">Reset</button>
+                        </div>
+                    </div>
+                </form>
+
+                
+            </div>
+
+
+
+        </main>
+    </div>
+
+    <script src="../JS/payrollform.js"></script>
+</body>
+
+</html>
