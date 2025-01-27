@@ -1,0 +1,41 @@
+{
+  "emplist": [
+    {
+      "name": "Raghav",
+      "pi": "../Assets/gora.jpg",
+      "gen": "Male",
+      "dpt": [
+        "HR",
+        "sales",
+        "Engineer"
+      ],
+      "sal": "100000",
+      "startdate": {
+        "date": "2",
+        "month": "2",
+        "year": "2"
+      },
+      "notes": "hello world",
+      "id": "cb60"
+    },
+    {
+      "name": "Yugam verma",
+      "pi": "../Assets/kalu.jpg",
+      "gen": "Male",
+      "dpt": [
+        "sales",
+        "Finance",
+        "Engineer",
+        "Others"
+      ],
+      "sal": "50000",
+      "startdate": {
+        "date": "2",
+        "month": "2",
+        "year": "2"
+      },
+      "notes": "Hello guyss",
+      "id": "66fc"
+    }
+  ]
+}
