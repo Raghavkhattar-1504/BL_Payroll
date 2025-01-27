@@ -6,7 +6,7 @@ $(document).ready(() => {
     if (userdata) {
         userdata.forEach((user, ind) => {
             const dept = user.dpt
-                .map((dept) => `<span>${(dept)}</span>`).join(", ");
+                .map((dept) => `<span class= "badge">${(dept)}</span>`).join("").slice(" ");
 
             let datestr = ''
 
@@ -21,7 +21,7 @@ $(document).ready(() => {
             else if (user.startdate.date === "3" && user.startdate.month === '3' && user.startdate.year === '3') {
                 datestr = `21 October 2006`;
             }
-
+          
             const row = `
             <tr>
                             <td><img src= ${user.pi} alt="Avatar"> ${user.name}</td>
@@ -32,15 +32,10 @@ $(document).ready(() => {
                             <td>${user.sal}</td>
                             <td>${datestr}</td>
                             <td class="actions">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                                    fill="currentColor">
-                                    <path d="M3 6h18v2H3V6zm3 14h12V9H6v11zm3-7h6v2H9v-2z" />
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                                    fill="currentColor">
-                                    <path
-                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 13l-2.5-2.5 2.5-2.5-1.41-1.41L12 11.59l-3.59-3.59L7 8.5l2.5 2.5-2.5 2.5L8.41 16l3.59-3.59L15.59 16z" />
-                                </svg>
+                                <img onclick= "editUser(${ind})" src="../Assets/pencil.png" alt="Edit" class="edit-logo">
+                                </img>
+                                <img onclick= "deleteUser(${ind})" src="../Assets/bin.png" alt="Delete" class="delete-logo">
+                                </img>
                             </td>
                         </tr>`
 
@@ -48,3 +43,17 @@ $(document).ready(() => {
         });
     }
 });
+
+function deleteUser(index) {
+    userdata.splice(index, 1);
+    localStorage.setItem('userData' , JSON.stringify(userdata));
+    alert("Employee Deleted");
+    window.location.reload();
+}
+
+function editUser(index) {
+    console.log(index);
+    console.log("Edit icon clicked");
+    window.location.href = `payrollform.html?index = ${index}`;
+}
+
