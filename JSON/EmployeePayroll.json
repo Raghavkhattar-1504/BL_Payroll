@@ -36,6 +36,23 @@
       },
       "notes": "Hello guyss",
       "id": "66fc"
+    },
+    {
+      "id": "1a43",
+      "name": "rakshit",
+      "pi": "../Assets/gora.jpg",
+      "gen": "Female",
+      "dpt": [
+        "sales",
+        "Finance"
+      ],
+      "sal": "70000",
+      "startdate": {
+        "date": "1",
+        "month": "1",
+        "year": "1"
+      },
+      "notes": "uyyvyuoiuyf"
     }
   ]
 }

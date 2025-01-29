@@ -229,3 +229,78 @@
 }
 
 
+
+@media screen and (max-width: 768px) {
+    .emp-bdy-box {
+        width: 90%;
+        padding: 3vh;
+    }
+
+    .emp-bdy-hd {
+        font-size: 1rem;
+    }
+
+    .name, 
+    .emp-bdy-box-frm-pi, 
+    .emp-bdy-box-frm-g, 
+    .emp-bdy-box-frm-dpt, 
+    .emp-bdy-box-frm-sal, 
+    .emp-bdy-box-frm-sd, 
+    .emp-bdy-box-frm-nts {
+        flex-direction: column;
+    }
+
+    .ques {
+        width: 100%;
+    }
+
+    #date, #month, #year {
+        width: 100%;
+    }
+
+    #namebox, #salary, #notes {
+        width: 100%;
+    }
+
+    .emp-bdy-box-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cancel, #submit, #reset {
+        width: 80%;
+    }
+}
+
+/* For screens smaller than 480px (Phones) */
+@media screen and (max-width: 480px) {
+    .emp-nvbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .emp-bdy-box {
+        width: 95%;
+        padding: 2vh;
+    }
+
+    .emp-bdy-hd {
+        font-size: 0.9rem;
+    }
+
+    .emp-bdy-box-btn {
+        flex-direction: column;
+    }
+
+    #cancel, #submit, #reset {
+        width: 100%;
+        margin-bottom: 1vh;
+    }
+
+    .pimg {
+        width: 40px;
+        height: 40px;
+    }
+}
+

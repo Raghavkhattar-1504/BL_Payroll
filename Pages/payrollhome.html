@@ -35,9 +35,13 @@
                 </h3>
 
                 <div class="emp-bdy-tl-sa">
-                    <div class="search">
-                        <img src="../Assets/search.png" alt="Search Icon" id="search-logo">
+                    <div class="emp-bdy-tl-sc">
+                        <input type="text" id="search-input" placeholder="Search by name..." oninput="searchByName()">
+                        <div onclick="serachByName()" class="search">
+                            <img src="../Assets/search.png" alt="Search Icon" id="search-logo">
+                        </div>
                     </div>
+
                     <div class="adduser">
                         <a href="../Pages/payrollform.html"><button class="user-btn">+ Add User</button></a>
                     </div>
